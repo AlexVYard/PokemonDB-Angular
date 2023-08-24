@@ -423,19 +423,22 @@ h2 {
   Margin: 10px Auto;
 }
 
-.Btndesign img {
-  height: 60px;
+.Btndesign ion-img {  
   max-height: 8.5vw;
+  height: 60px;
   padding: 3px;
+  display: inline-block;
 }
 
 .logopokego {
   /* justify-content: center;
   text-align: center; */
   filter: drop-shadow(2.5px 2.5px 2.5px #000000);
-  margin:0 auto;
+  margin: 0 auto;
   max-width: 80%;
-  height: auto;
+  width: 85vh;
+  // max-height: 80%;
+  // height: 10%;
 }
 
 .botonsdex {
