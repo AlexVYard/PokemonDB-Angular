@@ -1,20 +1,143 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <body>
+    <div id="root">
+      <div class="container">
+
+        <ion-img
+          class="logopokego"
+          src="../../assets/img/title.png"
+          alt="Pokelogo">
+        </ion-img>
+
+        <br>
+        <br>
+
+        <h2> GUIA PARA ENTRENADORES </h2>
+
+        <br>
+        <br>
+
+        <div class="Btndesign">
+
+          <img id="resetButton" src="../../assets/img/reload.png">
+
+          <br>
+
+          <img
+            id="grassButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/0/0a/latest/20210602132335/Tipo_planta_GO.png">
+          <img
+            id="fireButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/7/7e/latest/20210602132335/Tipo_fuego_GO.png">
+          <img
+            id="waterButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/c/c9/latest/20210602132335/Tipo_agua_GO.png">
+          <img
+            id="bugButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/c/c3/latest/20210602131501/Tipo_bicho_GO.png">
+          <img
+            id="normalButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/e/e0/latest/20210602131449/Tipo_normal_GO.png">
+          <img
+            id="flyingButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/1/18/latest/20210602131453/Tipo_volador_GO.png">
+          <img
+            id="poisonButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/7/74/latest/20210602131455/Tipo_veneno_GO.png">
+          <img
+            id="electricButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/5/55/latest/20210602132337/Tipo_el%C3%A9ctrico_GO.png">
+          <img
+            id="groundButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/1/15/latest/20210602131457/Tipo_tierra_GO.png">
+          <img
+            id="fightButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/9/95/latest/20210602131451/Tipo_lucha_GO.png">
+          <img
+            id="psychicButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/b/b3/latest/20210602132338/Tipo_ps%C3%ADquico_GO.png">
+          <img
+            id="rockButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/b/bb/latest/20210602131459/Tipo_roca_GO.png">
+          <img
+            id="ghostButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/1/1a/latest/20210602131503/Tipo_fantasma_GO.png">
+          <img
+            id="iceButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/f/fe/latest/20210602132341/Tipo_hielo_GO.png">
+          <img
+            id="dragonButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/0/0c/latest/20210602132342/Tipo_drag%C3%B3n_GO.png">
+          <img
+            id="darkButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/a/a1/latest/20210602132344/Tipo_siniestro_GO.png">
+          <img
+            id="steelButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/3/31/latest/20210602131505/Tipo_acero_GO.png">
+          <img
+            id="fairyButton"
+            src="https://images.wikidexcdn.net/mwuploads/wikidex/9/91/latest/20210602132347/Tipo_hada_GO.png">
+        </div>
+
+        <div class="botonsdex">
+          <img id="nationaldex" src="../../assets/img/00dex_national.png" min-width="20%" hspace="20">
+          <img id="kantodex" src="../../assets/img/01dex_kanto.png" min-width="25%" hspace="20">
+          <img id="johto" src="../../assets/img/02dex_johto.png" min-width="25%" hspace="20">
+        </div>
+
+
+        <div id="searchID" class="searchBTNclass">
+          <input class="input" placeholder="Search Pokemon" id="search" type="text" maxlength="32" />
+          <button id="searchButton" class="button2">Search</button><br>
+
+
+        </div>
+        <button id="detailedViewbButton" class="button">Tabla Informatica</button> <br>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <ul id="pokedex">
+          <!--  Esto va a ser llenado por el Javascript -->
+        </ul>
+
+
+        <table class="table" id="detailedView">
+          <!-- <thread>        
+          <tr>
+            <th id="headerSprite" class = "sprite">Sprite</th>
+            <th id="headerNumber" class = "number">Number</th>
+            <th id="headerName" class = "name">Name</th>  
+            <th id="headerType" class = "type">Type</th>
+            <th id="headerWeaknesses" class = "weaknesses">Weaknesses</th>
+            <th id="headerResistant" class = "resistant">Resistances</th>
+            <th id="headerEgg" class = "egg">Hatch Egg (Km)</th>
+            <th id="headerCandyCost" class = "candy-cost">Candy Cost</th>          
+          </tr>
+        </thread> -->
+          <tbody id="htmlTable"></tbody>
+          <!--Esto va a ser llenado en el Javascript-->
+        </table>
+      </div>
+    </div>
+
+    <script src="main.js" type="module"></script>
+  </body>
 </ion-content>
