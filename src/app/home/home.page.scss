@@ -7,7 +7,7 @@
 #root {
   color: black;
   font-family: 'Lato', sans-serif;
-  font-size: 15px;
+  font-size: 7.5px;
   text-align: center;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .container {
-  padding: 40px;
+  padding: 5vw;
   margin: 0 auto;
 }
 
@@ -112,7 +112,7 @@ h2 {
   color: #456ca4;
   text-align: center;
   font-family: 'Lato', sans-serif;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 /* #pokedex {
@@ -392,16 +392,16 @@ h2 {
 }
 
 .button {
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   background-color: #6509d77a;
   border: none;
   color: white;
-  padding: 15px 32px;
+  padding: 7.5px 16px;
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 16px;
-  border-radius: 30px;
+  font-size: 8px;
+  border-radius: 15px;
 }
 
 /* .button2 {
@@ -418,111 +418,48 @@ h2 {
 
 /* botones filtrado por tipo*/
 .Btndesign {
-  filter: drop-shadow(5px 5px 5px #000000);
-  Margin: 20px Auto;
+  padding: 3px;
+  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
+  Margin: 10px Auto;
 }
 
-#resetButton {
+.Btndesign img {
   height: 60px;
-  padding-bottom: 10px;
-}
-
-#grassButton {
-  padding: 3px;
-}
-
-#fireButton {
-  padding: 3px;
-}
-
-#waterButton {
-  padding: 3px;
-}
-
-#bugButton {
-  padding: 3px;
-}
-
-#normalButton {
-  padding: 3px;
-}
-
-#flyingButton {
-  padding: 3px;
-}
-
-#electricButton {
-  padding: 3px;
-}
-
-#poisonButton {
-  padding: 3px;
-}
-
-#groundButton {
-  padding: 3px;
-}
-
-#fightButton {
-  padding: 3px;
-}
-
-#psychicButton {
-  padding: 3px;
-}
-
-#rockButton {
-  padding: 3px;
-}
-
-#ghostButton {
-  padding: 3px;
-}
-
-#iceButton {
-  padding: 3px;
-}
-
-#dragonButton {
-  padding: 3px;
-}
-
-#darkButton {
-  padding: 3px;
-}
-
-#steelButton {
-  padding: 3px;
-}
-
-#fairyButton {
+  max-height: 8.5vw;
   padding: 3px;
 }
 
 .logopokego {
-  text-align: center;
-  filter: drop-shadow(5px 5px 5px #000000);
-  max-width: 100%;
+  /* justify-content: center;
+  text-align: center; */
+  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
+  margin:0 auto;
+  max-width: 80%;
   height: auto;
 }
 
 .botonsdex {
-  filter: drop-shadow(5px 5px 5px #646464);
+  filter: drop-shadow(2.5px 2.5px 2.5px #646464);
   justify-content: center;
 }
 
 #nationaldex {
-  height: 60px;
+  width: 260px;
+  padding: 4%;
 }
 
 #kantodex {
-  padding-left: 4%;
-  margin-right: -47px;
+  width: 295px;
+  padding: 4%;
+  margin-top: -15px;
+  margin-right: -46px;
 }
 
 #johto {
-  padding-left: 4%;
-  margin-right: -34px;
+  width: 320px;
+  // padding-left: 4%;
+  padding: 4%;
+  margin-right: -80px;
 }
 
 .undefinedText {
