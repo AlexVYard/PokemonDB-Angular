@@ -11,6 +11,84 @@
   text-align: center;
 }
 
+body {
+  background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);
+  color: rgb(0, 60, 255);
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+}
+
+.container {
+  padding: 5vw;
+  margin: 0 auto;
+}
+
+.logopokego {
+  /* justify-content: center;
+  text-align: center; */
+  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
+  margin: 0 auto;
+  max-width: 80%;
+  width: 85vh;
+  // max-height: 80%;
+  // height: 10%;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #456ca4;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  font-size: 2.5vh;
+}
+
+/* botones filtrado por tipo*/
+.Btndesign {
+  padding: 3px;
+  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
+  Margin: 10px Auto;
+}
+
+.Btndesign ion-img {  
+  max-height: 8.5vw;
+  height: 60px;
+  padding: 3px;
+  display: inline-block;
+}
+
+.botonsdex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  filter: drop-shadow(2.5px 2.5px 2.5px #646464);
+  justify-content: center;
+  padding: 2vh;
+}
+
+.botonsdex ion-img {
+  // margin: 0 auto;
+  max-width: 80%;
+  width: 60vh;
+  padding: 2vh;
+}
+
+.searchBTNclass {
+  visibility: collapse;
+}
+
+#detailedViewbButton {
+  margin-bottom: 4px;
+  background-color: #6509d77a;
+  border: none;
+  color: white;
+  padding: 7.5px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 8px;
+  border-radius: 15px;
+}
+
 /* .table-types {
   text-transform: uppercase;
   color: whitesmoke;
@@ -74,11 +152,6 @@
   visibility: collapse;
 } */
 
-.searchBTNclass {
-  visibility: collapse;
-}
-
-
 /* table {
   margin: 40px;
   width: calc(100% + 30px);
@@ -92,28 +165,6 @@
   width: 100px;
   filter: drop-shadow(5px 5px 5px #646464);
 } */
-
-
-
-body {
-  background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);
-  color: rgb(0, 60, 255);
-  font-family: 'Lato', sans-serif;
-  margin: 0;
-}
-
-.container {
-  padding: 5vw;
-  margin: 0 auto;
-}
-
-h2 {
-  text-transform: uppercase;
-  color: #456ca4;
-  text-align: center;
-  font-family: 'Lato', sans-serif;
-  font-size: 15px;
-}
 
 /* #pokedex {
   display: grid;
@@ -391,19 +442,6 @@ h2 {
   }
 }
 
-.button {
-  margin-bottom: 4px;
-  background-color: #6509d77a;
-  border: none;
-  color: white;
-  padding: 7.5px 16px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 8px;
-  border-radius: 15px;
-}
-
 /* .button2 {
   margin-bottom: 8px;
   background-color: #8e8c8c;
@@ -415,55 +453,6 @@ h2 {
   display: inline-block;
   font-size: 16px;
 } */
-
-/* botones filtrado por tipo*/
-.Btndesign {
-  padding: 3px;
-  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
-  Margin: 10px Auto;
-}
-
-.Btndesign ion-img {  
-  max-height: 8.5vw;
-  height: 60px;
-  padding: 3px;
-  display: inline-block;
-}
-
-.logopokego {
-  /* justify-content: center;
-  text-align: center; */
-  filter: drop-shadow(2.5px 2.5px 2.5px #000000);
-  margin: 0 auto;
-  max-width: 80%;
-  width: 85vh;
-  // max-height: 80%;
-  // height: 10%;
-}
-
-.botonsdex {
-  filter: drop-shadow(2.5px 2.5px 2.5px #646464);
-  justify-content: center;
-}
-
-#nationaldex {
-  width: 260px;
-  padding: 4%;
-}
-
-#kantodex {
-  width: 295px;
-  padding: 4%;
-  margin-top: -15px;
-  margin-right: -46px;
-}
-
-#johto {
-  width: 320px;
-  // padding-left: 4%;
-  padding: 4%;
-  margin-right: -80px;
-}
 
 .undefinedText {
   display: none
