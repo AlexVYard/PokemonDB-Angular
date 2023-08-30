@@ -12,7 +12,7 @@ import { AppService } from '../../app/app.services';
 
 export class HomePage {
 
-  PokemonInfo: any = [];
+  pokemonDB: any = [];
 
   constructor(private service: AppService) {
     console.log("HomePage Component")
@@ -25,9 +25,71 @@ export class HomePage {
   }
 
   ngOnInit() {
+    // get info from api
     this.service.GetPokemonData().subscribe((data: any) => {
-      this.PokemonInfo = data;
-      console.log(data)
+      
+      const pokedexFull: any = document.getElementById("pokedex");
+      let pokedexDataHTML = ''
+
+      for (let i = 0; i < data.results.length; i++) {
+
+        this.pokemonDB = data.results
+        
+        console.log(data.results[i])
+
+        pokedexDataHTML += `
+            <li class = "{this.pokemonDB[i].type[0]}" id= poketype>
+              <img class = "card-image" src ="{this.pokemonDB[i].img}"/>
+              <h2 class = "card-title">
+                {this.pokemonDB[i].num}
+                <br>
+                ${this.pokemonDB[i].name}
+              </h2>
+              <p class = "card-subtitle">
+                <div class="{this.pokemonDB[i].type[0]}Text">{this.pokemonDB[i].type[0]}</div>
+                <br>
+                <br>
+                <div class="{this.pokemonDB[i].type[1]}Text">{this.pokemonDB[i].type[1]}</div>
+              </p>
+            </li>
+          `;
+      }
+
+      pokedexFull.innerHTML = pokedexDataHTML
+
+      // this.pokemonDB = data
+
+      // load cards
+      // loadCards(this.pokemonDB);
+
+      /* function loadCards(pokemonDB: any) {
+        const pokedexFull: any = document.getElementById("pokedex");
+        let pokedexDataHTML = ''
+        for (let i = 0; i < pokemonDB.length; i++) {
+          // console.log(pokemonDB[i])
+          pokedexDataHTML += `
+            <li class = "${this.pokemonDB[i].type[0]}" id= poketype>
+              <img class = "card-image" src ="${this.pokemonDB[i].img}"/>
+              <h2 class = "card-title">
+                ${this.pokemonDB[i].num}
+                <br>
+                ${this.pokemonDB[i].name}
+              </h2>
+              <p class = "card-subtitle">
+                <div class="${this.pokemonDB[i].type[0]}Text">${this.pokemonDB[i].type[0]}</div>
+                <br>
+                <br>
+                <div class="${this.pokemonDB[i].type[1]}Text">${this.pokemonDB[i].type[1]}</div>
+              </p>
+            </li>
+          `;
+        }
+      
+        pokedexFull.innerHTML = pokedexDataHTML
+      
+        // console.log(pokemonDB.results[0].url)
+      } */
+
     })
   }
 

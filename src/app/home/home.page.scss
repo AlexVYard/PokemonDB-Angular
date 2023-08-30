@@ -1,24 +1,32 @@
-* {
+/* * {
   margin: 0px;
   padding: 0px;
-}
+} */
 
-
-#root {
+/* #root {
   color: black;
   font-family: 'Lato', sans-serif;
   font-size: 7.5px;
   text-align: center;
-}
+} */
 
 body {
+  overflow: scroll;
   background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);
   color: rgb(0, 60, 255);
   font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .container {
+  color: black;
+  font-family: 'Lato', sans-serif;
+  font-size: 7.5px;
+  text-align: center;
   padding: 5vw;
   margin: 0 auto;
 }
