@@ -7,6 +7,9 @@ import { routes } from './app/app.routes';
 import { AppComponent } from './app/app.component';
 import { environment } from './environments/environment';
 
+import { HttpClientModule } from '@angular/common/http';
+import { AppService } from './app/app.services';
+
 if (environment.production) {
   enableProdMode();
 }
@@ -16,5 +19,7 @@ bootstrapApplication(AppComponent, {
     { provide: RouteReuseStrategy, useClass: IonicRouteStrategy },
     importProvidersFrom(IonicModule.forRoot({})),
     provideRouter(routes),
+    AppService,
+    importProvidersFrom(HttpClientModule)
   ],
 });
