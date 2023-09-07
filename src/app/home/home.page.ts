@@ -21,10 +21,21 @@ export class HomePage {
   }
 
   ngOnInit() {
-    // get info from api
-    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=1010&offset=0').subscribe((data: any) => {
+    // gets names and url from api
+    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=1010&offset=0').subscribe((res: any) => {
       
-      this.pokemonDB = data.results
+      this.pokemonDB = res.results      
+
+      // gets complimentary data for pokemons
+      for (let i = 0; i < this.pokemonDB.length; i++) {
+
+        this.http.get(this.pokemonDB[i].url).subscribe((res: any) => {
+          // console.log(res)
+          // this.pokemonDB[i].url
+          this.pokemonDB[i].data = res
+        })
+
+      }
 
       console.log(this.pokemonDB)
 
