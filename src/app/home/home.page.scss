@@ -97,6 +97,21 @@ h2 {
   border-radius: 15px;
 }
 
+#cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+  padding-inline-start: 0;
+}
+
+.card-title {
+  text-transform: capitalize;
+  color: #ffffff;
+  Text-Align: Center;
+  font-size: 30px;
+  Font-Weight: 600;
+}
+
 /* .table-types {
   text-transform: uppercase;
   color: whitesmoke;
@@ -172,13 +187,6 @@ h2 {
   height: 100px;
   width: 100px;
   filter: drop-shadow(5px 5px 5px #646464);
-} */
-
-/* #pokedex {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  grid-gap: 20px;
-  padding-inline-start: 0;
 } */
 
 /* #poketype {
@@ -402,15 +410,6 @@ h2 {
 
 .steel:hover {
   animation: bounce 0.5s linear;
-}
-
-
-.card-title {
-  text-transform: capitalize;
-  color: #ffffff;
-  Text-Align: Center;
-  font-size: 30px;
-  Font-Weight: 600;
 }
 
 .card-subtitle {

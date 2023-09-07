@@ -146,9 +146,24 @@
       <br>
       <br>
 
-      <ul id="pokedex">
-        <!--  Esto va a ser llenado por el Javascript -->
-      </ul>
+      
+
+      <div id="cards">
+        <ion-item *ngFor="let pokemon of pokemonDB">
+          <ion-card>
+
+            <ion-card-header>
+              <ion-card-title class = "card-title">{{pokemon.name}}</ion-card-title>
+              <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+            </ion-card-header>
+          
+            <!-- <ion-card-content>
+              Here's a small text description for the card content. Nothing more, nothing less.
+            </ion-card-content> -->
+
+          </ion-card>
+        </ion-item>
+      </div>
 
       <table class="table" id="detailedView">
         <!-- <thread>        
