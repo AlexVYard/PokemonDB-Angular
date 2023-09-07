@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
-import { AppService } from '../../app/app.services';
+// import { AppService } from '../../app/app.services';
 import { CommonModule } from '@angular/common';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -15,13 +16,13 @@ export class HomePage {
 
   pokemonDB: any = [];
 
-  constructor(private http: AppService) {
+  constructor(private http: HttpClient) {
     console.log("HomePage Component")
   }
 
   ngOnInit() {
     // get info from api
-    this.http.GetPokemonData().subscribe((data: any) => {
+    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=1010&offset=0').subscribe((data: any) => {
       
       this.pokemonDB = data.results
 
