@@ -33,6 +33,12 @@ export class HomePage {
           // console.log(res)
           // this.pokemonDB[i].url
           this.pokemonDB[i].data = res
+          if (this.pokemonDB[i].data.id.toString().length < 3) {
+            this.pokemonDB[i].data.id = "0"+this.pokemonDB[i].data.id
+            if (this.pokemonDB[i].data.id.toString().length < 3) {
+              this.pokemonDB[i].data.id = "0"+this.pokemonDB[i].data.id
+            }
+          }
         })
 
       }

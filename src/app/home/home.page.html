@@ -144,16 +144,18 @@
       <br>
       <br>
       <br>
-      <br>
-
-      
+      <br>      
 
       <div id="cards">
         <ion-item *ngFor="let pokemon of pokemonDB">
           <ion-card class={{pokemon.data.types[0].type.name}}>
 
             <ion-card-header>
-              <ion-card-title class="card-title">{{pokemon.name}}</ion-card-title>
+              <ion-card-title class="card-title">
+                {{pokemon.data.id}}
+                <br>
+                {{pokemon.name}}
+              </ion-card-title>
               <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
             </ion-card-header>
           
