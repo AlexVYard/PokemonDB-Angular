@@ -22,7 +22,7 @@ export class HomePage {
 
   ngOnInit() {
     // gets names and url from api
-    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=1010&offset=0').subscribe((res: any) => {
+    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0').subscribe((res: any) => {
       
       this.pokemonDB = res.results      
 

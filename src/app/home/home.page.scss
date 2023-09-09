@@ -14,7 +14,6 @@ body {
   overflow: scroll;
   background-image: linear-gradient(90deg, #c1e4ff 0%, #bca4f7 35%, #aff0fd 100%);
   color: rgb(0, 60, 255);
-  font-family: 'Lato', sans-serif;
   margin: 0;
 }
 
@@ -24,7 +23,7 @@ body::-webkit-scrollbar {
 
 .container {
   color: black;
-  font-family: 'Lato', sans-serif;
+  // font-family: 'Lato', sans-serif;
   font-size: 7.5px;
   text-align: center;
   padding: 5vw;
@@ -97,6 +96,18 @@ h2 {
   border-radius: 15px;
 }
 
+ion-item::part(native) {
+  //WRITE ALL YOUR CSS RULES HERE
+  --background: transparent;
+  /** and lots more **/
+  --inner-border-width: 0 0 0 0;
+}
+
+/* ion-card {
+  --background: #29985d !important;
+  --color: #9efff0;
+} */
+
 #cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -109,7 +120,7 @@ h2 {
   color: #ffffff;
   Text-Align: Center;
   font-size: 30px;
-  Font-Weight: 600;
+  Font-Weight: 350;
 }
 
 /* .table-types {
@@ -197,7 +208,7 @@ h2 {
 } */
 
 .grass {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
   background-color: #9bfd8729;
@@ -208,10 +219,10 @@ h2 {
 }
 
 .bug {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #7ca4782c;
 }
 
@@ -220,10 +231,10 @@ h2 {
 }
 
 .dragon {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #27028d37;
 }
 
@@ -232,10 +243,10 @@ h2 {
 }
 
 .electric {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #f2cc0d32;
 }
 
@@ -244,10 +255,10 @@ h2 {
 }
 
 .fairy {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #e65f972c;
 }
 
@@ -256,10 +267,10 @@ h2 {
 }
 
 .fighting {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #6604042f;
 }
 
@@ -268,10 +279,10 @@ h2 {
 }
 
 .fire {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #f6890d2c;
 }
 
@@ -280,10 +291,10 @@ h2 {
 }
 
 .flying {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #a4c8c82c;
 }
 
@@ -292,10 +303,10 @@ h2 {
 }
 
 .ground {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #a0701832;
 }
 
@@ -304,10 +315,10 @@ h2 {
 }
 
 .ghost {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #41067c2b;
 }
 
@@ -317,10 +328,10 @@ h2 {
 
 
 .ice {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #ccddee28;
 }
 
@@ -329,10 +340,10 @@ h2 {
 }
 
 .normal {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #cbcbcb27;
 }
 
@@ -341,10 +352,10 @@ h2 {
 }
 
 .poison {
-  box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
+  // box-shadow: 0 4px 8px 0 rgb(0, 0, 0);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #8400ff19;
 }
 
@@ -353,10 +364,10 @@ h2 {
 }
 
 .psychic {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #c502ae2b;
 }
 
@@ -365,10 +376,10 @@ h2 {
 }
 
 .rock {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #432c1432;
 }
 
@@ -377,10 +388,10 @@ h2 {
 }
 
 .water {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #9bd3fe2d;
 }
 
@@ -389,10 +400,10 @@ h2 {
 }
 
 .dark {
-  box-shadow: 0 4px 8px 0 rgba(43, 39, 39, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(43, 39, 39, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #4d4c4c2d;
 }
 
@@ -401,10 +412,10 @@ h2 {
 }
 
 .steel {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
   border-radius: 100px;
-  Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
+  // Box-Shadow: 0 20px 30px Rgba(0, 0, 0, 0.15);
   background-color: #5c5c5c32;
 }
 
