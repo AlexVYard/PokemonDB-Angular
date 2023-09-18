@@ -22,24 +22,24 @@ export class HomePage {
 
   ngOnInit() {
     // gets names and url from api
-    this.http.get('https://pokeapi.co/api/v2/pokemon?limit=150&offset=0').subscribe((res: any) => {
+    this.http.get('https://pokemon-go-api.github.io/pokemon-go-api/api/pokedex/generation/1.json').subscribe((res: any) => {
       
-      this.pokemonDB = res.results      
+      this.pokemonDB = res      
 
       // gets complimentary data for pokemons
       for (let i = 0; i < this.pokemonDB.length; i++) {
-
-        this.http.get(this.pokemonDB[i].url).subscribe((res: any) => {
+        this.pokemonDB[i].primaryType.names.English = this.pokemonDB[i].primaryType.names.English.toLowerCase()
+        // this.http.get(this.pokemonDB[i].url).subscribe((res: any) => {
           // console.log(res)
           // this.pokemonDB[i].url
-          this.pokemonDB[i].data = res
-          if (this.pokemonDB[i].data.id.toString().length < 3) {
-            this.pokemonDB[i].data.id = "0"+this.pokemonDB[i].data.id
-            if (this.pokemonDB[i].data.id.toString().length < 3) {
-              this.pokemonDB[i].data.id = "0"+this.pokemonDB[i].data.id
+          // this.pokemonDB[i].data = res
+          if (this.pokemonDB[i].dexNr.toString().length < 3) {
+            this.pokemonDB[i].dexNr = "0"+this.pokemonDB[i].dexNr
+            if (this.pokemonDB[i].dexNr.toString().length < 3) {
+              this.pokemonDB[i].dexNr = "0"+this.pokemonDB[i].dexNr
             }
           }
-        })
+        // })
 
       }
 
