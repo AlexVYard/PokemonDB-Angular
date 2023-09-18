@@ -271,13 +271,6 @@ ion-card-header {
   filter: drop-shadow(5px 5px 5px #646464);
 } */
 
-/* #poketype {
-  font-family: 'Lato', sans-serif;
-  font-weight: bold;
-  text-transform: uppercase;
-  padding-bottom: 20%;
-} */
-
 .grass {
   // box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
@@ -534,6 +527,22 @@ ion-card-header {
   font-size: 16px;
 } */
 
+#types {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  text-transform: uppercase;
+  // padding-bottom: 20%;
+  Text-Align: Center;
+  // margin: auto auto 50% auto;
+  padding: 5% 0px;
+  margin: 40% 0px;
+  /* margin-top: auto;
+  margin-left: 50%;
+  margin-right: -75%;
+  transform: translateX(-50%) */
+}
+
 .undefinedText {
   display: none
 }
@@ -547,8 +556,8 @@ ion-card-header {
   background-color: #02bc21;
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
   padding-bottom: 3px;
 }
 
@@ -559,8 +568,8 @@ ion-card-header {
   background-color: hsl(290, 91%, 42%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -572,8 +581,8 @@ ion-card-header {
   background-color: hsl(36, 95%, 44%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 25px;
-  padding-right: 25px;
+  /* padding-left: 25px;
+  padding-right: 25px; */
   padding-bottom: 3px;
 
 }
@@ -598,8 +607,8 @@ ion-card-header {
   background-color: hsl(209, 91%, 42%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -624,8 +633,8 @@ ion-card-header {
   background-color: hsl(0, 0%, 59%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -650,8 +659,8 @@ ion-card-header {
   background-color: hsl(44, 68%, 38%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -663,8 +672,8 @@ ion-card-header {
   background-color: hsl(0, 96%, 27%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -676,8 +685,8 @@ ion-card-header {
   background-color: hsl(309, 99%, 44%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -689,8 +698,8 @@ ion-card-header {
   background-color: hsl(59, 22%, 39%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -702,8 +711,8 @@ ion-card-header {
   background-color: hsl(187, 57%, 76%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -728,8 +737,8 @@ ion-card-header {
   background-color: hsl(256, 96%, 43%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -741,8 +750,8 @@ ion-card-header {
   background-color: hsl(314, 78%, 75%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -754,8 +763,8 @@ ion-card-header {
   background-color: hsl(300, 2%, 22%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
@@ -767,8 +776,8 @@ ion-card-header {
   background-color: hsl(0, 0%, 70%);
   border-radius: 10px;
   padding-top: 3px;
-  padding-left: 20px;
-  padding-right: 20px;
+  /* padding-left: 20px;
+  padding-right: 20px; */
   padding-bottom: 3px;
 
 }
