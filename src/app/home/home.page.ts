@@ -29,6 +29,13 @@ export class HomePage {
       // gets complimentary data for pokemons
       for (let i = 0; i < this.pokemonDB.length; i++) {
         this.pokemonDB[i].primaryType.names.English = this.pokemonDB[i].primaryType.names.English.toLowerCase()
+        if (this.pokemonDB[i].secondaryType !== null) {
+          this.pokemonDB[i].secondaryType.names.English = this.pokemonDB[i].secondaryType.names.English.toLowerCase()
+        } else {
+          this.pokemonDB[i].secondaryType = {"names": {"English": "undefined"}}
+          /* this.pokemonDB[i].secondaryType.names = ["English"]
+          this.pokemonDB[i].secondaryType.names.English = "undefined" */
+        }
         // this.http.get(this.pokemonDB[i].url).subscribe((res: any) => {
           // console.log(res)
           // this.pokemonDB[i].url
@@ -44,6 +51,7 @@ export class HomePage {
       }
 
       console.log(this.pokemonDB)
+      console.log(this.pokemonDB[2].secondaryType !== null)
 
       /* const pokedexFull: any = document.getElementById("cards");
 
