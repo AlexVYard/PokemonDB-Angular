@@ -10,4 +10,8 @@ export const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full',
   },
+  {
+    path: 'kanto',
+    loadComponent: () => import('./kanto/kanto.page').then( m => m.KantoPage)
+  },
 ];
