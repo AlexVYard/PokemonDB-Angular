@@ -1,20 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      PokeGO Helpers Ionic ver.
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar>
+      <ion-title>Menu</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content class="ion-padding">This is the menu content.</ion-content>
+</ion-menu>
 
-<ion-content [fullscreen]="true">
+<div class="ion-page" id="main-content">
+  <ion-header [translucent]="true">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title>PokeGO Helpers Ionic ver.</ion-title>
+    </ion-toolbar>
+  </ion-header>
 
-  <body>
+  <ion-content [fullscreen]="true">
 
-    <ion-img class="logopokego" src="../../assets/img/title.png" alt="Pokelogo"></ion-img>
+    <body>
 
-    <ion-text color="primary" class="trainersGuideText">
-      <h3>GUIA PARA ENTRENADORES</h3>
-    </ion-text>
+      <ion-img class="logopokego" src="../../assets/img/title.png" alt="Pokelogo"></ion-img>
 
-  </body>
-</ion-content>
+      <ion-text color="primary" class="trainersGuideText">
+        <h3>GUIA PARA ENTRENADORES</h3>
+      </ion-text>
+
+    </body>
+  </ion-content>
+
+</div>
